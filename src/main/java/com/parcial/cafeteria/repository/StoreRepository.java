@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.parcial.cafeteria.entity.Store;
 
-public interface storeRepository extends JpaRepository<Store,Long> {
+public interface StoreRepository extends JpaRepository<Store,Long> {
 
 }
