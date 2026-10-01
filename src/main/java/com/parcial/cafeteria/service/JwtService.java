@@ -1,6 +1,12 @@
 package com.parcial.cafeteria.service;
 
+import java.security.Key;
+import java.util.Date;
+
+import javax.crypto.SecretKey;
+
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
 
 @Component 
@@ -38,7 +44,6 @@ public class JwtService {
 
             return true;
         } catch (JwtException | IllegalArgumentException e) {
-            // Token is invalid or expired
             return false;
         }
     }
